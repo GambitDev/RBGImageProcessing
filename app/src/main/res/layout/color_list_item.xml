@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/light_grey">
+
+    <View
+        android:id="@+id/ColorBox"
+        android:layout_width="match_parent"
+        android:layout_height="20pt"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginHorizontal="8dp"/>
+
+    <TextView
+        android:id="@+id/ColorPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/ColorBox"
+        app:layout_constraintBottom_toBottomOf="@id/ColorBox"
+        app:layout_constraintStart_toStartOf="@id/ColorBox"
+        app:layout_constraintEnd_toEndOf="@id/ColorBox"
+        tools:text="50%"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ColorText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ColorBox"
+        app:layout_constraintStart_toStartOf="@id/ColorBox"
+        app:layout_constraintEnd_toEndOf="@id/ColorBox"
+        tools:text="R: 54, G: 40, B: 120" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
